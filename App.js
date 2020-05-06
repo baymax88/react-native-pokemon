@@ -1,7 +1,7 @@
 //App.js
-import React, {Component} from 'react';
-import {createAppContainer} from 'react-navigation';
-import {createStackNavigator} from 'react-navigation-stack';
+import React, { Component } from 'react';
+import { createAppContainer } from 'react-navigation';
+import { createStackNavigator } from 'react-navigation-stack';
 import Pokemons from './Components/Pokemons.js';
 import Details from './Components/Details';
 
@@ -19,7 +19,7 @@ const appNavigator = createStackNavigator(
   },
 );
 
-const AppContainer = createAppContainer(stackNavigator);
+const AppContainer = createAppContainer(appNavigator);
 
 class App extends Component {
   render() {
